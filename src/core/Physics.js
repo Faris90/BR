@@ -60,7 +60,7 @@ module.exports = class Physics {
         y: cell.position.y
       };
       // Calculate mass and speed of splitting cell
-      let newMass = cell.mass / 2;
+      let newMass = cell.mass / 2 + 100;
       cell.mass = newMass;
       
       if (angle == 0) angle = Math.PI / 2;
